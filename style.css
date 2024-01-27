@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Atma:700|Atma:400");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Atma";
+  font-weight: 400;
+  color: black;
+  background-image: url("https://images.unsplash.com/photo-1532153259564-a5f24f261f51?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.player1-container,
+.player2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.score-p1,
+.score-p2 {
+  font-size: 3rem;
+}
+
+.display {
+  width: 15rem;
+  height: 15rem;
+  /* border: 1px solid red; */
+}
+
+.rock-p1 {
+  background-image: url("assets/rock.png");
+  transform: scaleX(-1);
+}
+.paper-p1 {
+  background-image: url("assets/paper.png");
+}
+.scissors-p1 {
+  background-image: url("assets/scissors.png");
+  transform: scaleX(-1);
+}
+
+.rock-p2 {
+  background-image: url("assets/rock.png");
+}
+
+.paper-p2 {
+  background-image: url("assets/paper.png");
+  transform: scaleX(-1);
+}
+
+.scissors-p2 {
+  background-image: url("assets/scissors.png");
+}
+
+.rock-p1,
+.paper-p1,
+.scissors-p1,
+.rock-p2,
+.paper-p2,
+.scissors-p2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
